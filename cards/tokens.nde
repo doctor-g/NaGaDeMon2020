@@ -1,0 +1,19 @@
+BORDER=RECTANGLE,#000000,.01
+UNIT=inch
+PAGE=8.5,11,PORTRAIT,HV
+DPI=300
+CARDSIZE=1,1
+
+[character_codes]=A|B|C
+[support_values]="+3"|"+1"
+[support_tokens]=1-6
+FONT=Oxygen,18,,#000000
+TEXT=[support_tokens], [character_codes], 0%,0%,100%,50%
+TEXT=[support_tokens], [support_values], 0%,50%,100%,50%
+
+[character_tokens]=7-9
+FONT=Oxygen,8,,#000000
+TEXTFONT=[character_tokens], "Character", 0%,0%,100%,33%
+FONT=Oxygen,24,,#000000
+TEXT=[character_tokens], [character_codes], 0%,33%,100%,66%
+
