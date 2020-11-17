@@ -1,0 +1,16 @@
+BORDER=RECTANGLE,#000000,.01
+UNIT=INCH
+PAGE=8.5,11,PORTRAIT,HV
+DPI=300
+CARDSIZE=2.5,3.5
+
+LINKMULTI=Quantity
+LINK=Z:\home\pvg\Projects\intrigue\cards\characters.ods
+
+[all]=1-{(TITLE)}
+
+
+TEXTFONT=[all],[TITLE],5.038%,0%,89.924%,15.108%,CENTER,CENTER,0,100,Oxygen,28,BF
+FONT=Oxygen,14,,#000000
+TEXT=[all],[TAG1],5%,85%,45%,15%,LEFT,TOP
+TEXT=[all],[TAG2],50%,85%,45%,15%,RIGHT,TOP
