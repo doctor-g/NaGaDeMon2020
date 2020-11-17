@@ -1,0 +1,19 @@
+BORDER=RECTANGLE,#000000,.01
+UNIT=inch
+PAGE=8.5,11,PORTRAIT,HV
+DPI=300
+CARDSIZE=2.26378,3.50394
+
+[character_ids]=A|B|C
+[player_numbers]=1|2|3
+[favor_fronts]=1-9
+[favor_backs]=10-18
+
+DUPLEX=[favor_fronts],[favor_backs]
+PRINT=DUPLEX
+
+FONT=Oxygen,18,,#000000
+TEXT=[favor_fronts], [character_ids],0%,0%,100%,100%
+TEXT=[favor_backs], "{(§-10)£3+1}",0%,0%,100%,66%
+FONT=Oxygen, 9,,#000000
+TEXT=[favor_backs], "Favor", 0%, 67%, 100%, 33%
