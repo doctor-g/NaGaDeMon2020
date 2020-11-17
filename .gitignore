@@ -1,0 +1,8 @@
+cards/nanDECK.exe
+cards/nandeck.ini
+
+# Emacs backup file
+*~
+
+# LibreOffice lock file
+*.~lock*
