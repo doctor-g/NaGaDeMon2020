@@ -4,14 +4,31 @@ PAGE=8.5,11,PORTRAIT,HV
 DPI=300
 CARDSIZE=2.5,3.5
 
-
 MULTILINK=Quantity
 LINK=Z:\home\pvg\Projects\intrigue\cards\cards.ods
-VISUAL=, 10, 10
-;TITLE
-TEXTFONT="1-{(TITLE)}",[TITLE],5.038%,0%,89.924%,15.108%,CENTER,CENTER,0,100,Oxygen,28,BF
-;DESCRIPTION
-TEXTFONT="1-{(DESCRIPTION)}",[DESCRIPTION],5.038%,15.108%,89.924%,75%,LEFT,WORDWRAP,0,100,Cantarell,12
-;SUPPORT
-TEXTFONT="1-{(SUPPORT)}",[SUPPORT],0%,92%,100%,5%,CENTER,CENTER,0,100,Oxygen,14,B
-ENDVISUAL
+
+[all]=1-{(TITLE)}
+
+; Determine the position of the description box based on
+; whether arrows must be shown.
+IF=([RIGHTSUPPORT]<>"") _OR_ ([LEFTSUPPORT]<>"")
+  COUNTER=[all],a,55
+ELSE
+  COUNTER=[all],a,15
+ENDIF
+
+TEXTFONT=[all],[TITLE],5.038%,0%,89.924%,15.108%,CENTER,CENTER,0,100,Oxygen,28,BF
+TEXTFONT=[all],[DESCRIPTION],5.038%,a%,89.924%,75%,LEFT,WORDWRAP,0,100,Cantarell,12
+TEXTFONT=[all],[SUPPORT],0%,92.086%,100%,5.036%,CENTER,CENTER,0,100,Oxygen,14,B
+
+
+FONT=Cantarell,12,F,#000000
+IF=([RIGHTSUPPORT]<>"")
+  IMAGE=[all],right_arrow.png,80%,20%,15%,35%
+  TEXT=[all],[RIGHTSUPPORT],50%,28%,28%,20%,RIGHT
+ENDIF
+
+IF=([LEFTSUPPORT]<>"")
+  IMAGE=[all],right_arrow.png,0%,20%,15%,35%,180
+  TEXT="1-{(LEFTSUPPORT)}",[LEFTSUPPORT],17%,28%,28%,20%,LEFT
+ENDIF
