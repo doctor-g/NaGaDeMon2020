@@ -1,0 +1,9 @@
+BORDER=RECTANGLE,#000000,.01
+UNIT=INCH
+PAGE=8.5,11,PORTRAIT,HV
+DPI=300
+CARDSIZE=1,1
+
+[character_ids]=A|B|C
+FONT=Oxygen,18,,#000000
+TEXT=1-{(character_ids)}, [character_ids],0%,0%,100%,100%
