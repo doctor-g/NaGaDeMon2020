@@ -4,7 +4,7 @@ PAGE=8.5,11,PORTRAIT,HV
 DPI=300
 CARDSIZE=2.5,3.5
 
-MULTILINK=Quantity
+LINKMULTI=Quantity
 LINK=Z:\home\pvg\Projects\intrigue\cards\cards.ods
 
 [all]=1-{(TITLE)}
@@ -14,11 +14,12 @@ LINK=Z:\home\pvg\Projects\intrigue\cards\cards.ods
 IF=([RIGHTSUPPORT]<>"") _OR_ ([LEFTSUPPORT]<>"")
   COUNTER=[all],a,55
 ELSE
-  COUNTER=[all],a,15
+  COUNTER=[all],a,25
 ENDIF
 
 TEXTFONT=[all],[TITLE],5.038%,0%,89.924%,15.108%,CENTER,CENTER,0,100,Oxygen,28,BF
-TEXTFONT=[all],[DESCRIPTION],5.038%,a%,89.924%,75%,LEFT,WORDWRAP,0,100,Cantarell,12
+TEXTFONT=[all],[TYPE],0%,15%,100%,10%,CENTER,CENTER,0,100,Oxygen,14,I
+TEXTFONT=[all],[DESCRIPTION],5.038%,a%,89.924%,75%,LEFT,WORDWRAP,0,100,Cantarell,12,
 TEXTFONT=[all],[SUPPORT],0%,92.086%,100%,5.036%,CENTER,CENTER,0,100,Oxygen,14,B
 
 
