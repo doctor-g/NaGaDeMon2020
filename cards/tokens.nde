@@ -3,6 +3,7 @@ UNIT=inch
 PAGE=8.5,11,PORTRAIT,HV
 DPI=300
 CARDSIZE=1,1
+MARGINS=0.5,0.5,0.5,0.5
 
 [character_codes]=A|B|C
 [support_values]="+3"|"+1"
