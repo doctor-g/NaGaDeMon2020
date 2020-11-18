@@ -20,7 +20,11 @@ ENDIF
 TEXTFONT=[all],[TITLE],5.038%,0%,89.924%,15.108%,CENTER,CENTER,0,100,Oxygen,28,BF
 TEXTFONT=[all],[TYPE],0%,15%,100%,10%,CENTER,CENTER,0,100,Oxygen,14,I
 TEXTFONT=[all],[DESCRIPTION],5.038%,a%,89.924%,75%,LEFT,WORDWRAP,0,100,Cantarell,12,
-TEXTFONT=[all],[SUPPORT],0%,92.086%,100%,5.036%,CENTER,CENTER,0,100,Oxygen,14,B
+; Overlay a rectangle onto the roundrect to get rounded corners only on top.
+ROUNDRECT=[all], 0%, 90%, 100%, 10%, #444444,#444444,1%,5%,5%,R
+RECTANGLE=[all], 0%, 95%, 100%, 5%, #444444
+FONT=Oxygen,14,BT,#ffffff
+TEXT=[all],[SUPPORT],0%,90%,100%,10%
 
 
 FONT=Cantarell,12,F,#000000
