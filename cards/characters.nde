@@ -11,6 +11,7 @@ LINK=Z:\home\pvg\Projects\intrigue\cards\characters.ods
 
 
 TEXTFONT=[all],[TITLE],5.038%,0%,89.924%,15.108%,CENTER,CENTER,0,100,Oxygen,28,BF
+TEXTFONT=[all],[PRIORITY],0%,15%,100%,20%,CENTER,CENTER,0,100,Oxygen,18
 FONT=Oxygen,14,,#000000
 TEXT=[all],[TAG1],5%,85%,45%,15%,LEFT,TOP
 TEXT=[all],[TAG2],50%,85%,45%,15%,RIGHT,TOP
