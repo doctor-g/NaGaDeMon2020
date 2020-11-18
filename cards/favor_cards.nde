@@ -12,8 +12,11 @@ CARDSIZE=2.26378,3.50394
 DUPLEX=[favor_fronts],[favor_backs]
 PRINT=DUPLEX
 
-FONT=Oxygen,18,,#000000
-TEXT=[favor_fronts], [character_ids],0%,0%,100%,100%
-TEXT=[favor_backs], "{(§-10)£3+1}",0%,0%,100%,66%
-FONT=Oxygen, 9,,#000000
-TEXT=[favor_backs], "Favor", 0%, 67%, 100%, 33%
+FONT=Oxygen,18,,
+TEXTFONT=[favor_fronts], "Favor",0%,0%,100%,33%
+FONT=Oxygen,24,,
+TEXT=[favor_fronts], [character_ids],0%,33%,100%,66%
+FONT=Oxygen,18,,
+TEXT=[favor_backs], "Player", 0%,0%,100%,33%
+FONT=Oxygen,24,,
+TEXT=[favor_backs], "{(§-10)£3+1}",0%,33%,100%,66%
