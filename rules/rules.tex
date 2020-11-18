@@ -2,7 +2,9 @@
 
 \usepackage{url}
 \usepackage{microtype}
-%\usepackage{fullpage}
+% \usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{subcaption}
 
 \begin{document}
 
@@ -62,6 +64,21 @@ Player 1 will have the three A, B, and C cards that have the number ``1''
 on the back.
 
 Choose a starting player using your favored method and begin the first round.
+
+\begin{figure}
+  \centering
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=2in]{layout_initial}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=2in]{layout_after}
+  \end{subfigure}
+  \caption{The initial character layout (left) and the positioning
+     of a relationship and the favor cards (right).}
+\end{figure}
+
 
 \section*{Playing the Game}
 
