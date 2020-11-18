@@ -1,19 +1,16 @@
-all: prereqs cards characters favor_cards tokens rules
+.PHONY: all cards rules
+all: docs/intrigue.pdf
 
-prereqs:
-	test -f cards/nanDECK.exe || { echo "nanDECK not found, exiting."; exit 1; }
+clean:
+	for d in rules cards; \
+	do \
+	  $(MAKE) --directory=$$d clean; \
+	done
 
-cards:
-	wine cards/nanDECK.exe /[lang]=en /createpdf cards/cards.nde
+cards rules:
+	$(MAKE) --directory=$@ $(TARGET)
 
-characters:
-	wine cards/nanDECK.exe /[lang]=en /createpdf cards/characters.nde
 
-favor_cards:
-	wine cards/nanDECK.exe /[lang]=en /createpdf cards/favor_cards.nde
-
-tokens:
-	wine cards/nanDECK.exe /[lang]=en /createpdf cards/tokens.nde
-
-rules:
-	pdflatex rules.tex
+docs/intrigue.pdf: cards rules
+	mkdir -p docs
+	pdftk rules/rules.pdf cards/printable.pdf cat output docs/intrigue.pdf
