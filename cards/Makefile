@@ -19,4 +19,4 @@ tokens.pdf: tokens.nde
 	wine nanDECK.exe /[lang]=en /createpdf tokens.nde
 
 printable.pdf: cards.pdf characters.pdf favor_cards.pdf tokens.pdf
-	pdftk characters.pdf cards.pdf favor_cards.pdf tokens.pdf cat output printable.pdf
+	pdftk characters.pdf cards.pdf tokens.pdf favor_cards.pdf cat output printable.pdf
