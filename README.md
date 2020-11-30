@@ -5,8 +5,15 @@ You compete with your opponents to put your favored successor onto
 the throne after the mysterious death of the King... but the successor
 you support in public may not be the one you are assisting in the shadows.
 
+## Downloads
 
-[Download the complete PDF now!](intrigue.pdf) (v0.1.1, 2020-11-18)
+v0.1.2 2020-11-30
+
+- [Rules](intrigue-rules.pdf)
+- [Single-sided Cards and Tokens](intrigue-simplex.pdf)
+- [Double-sided Cards](intrigue-duplex.pdf)
+
+## Background
 
 This game was created as part of the 2020 
 [National Game Design Month](https://nagademon.org)
