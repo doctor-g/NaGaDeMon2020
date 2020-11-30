@@ -2,6 +2,7 @@
 all: dist
 
 clean:
+	rm -f intrigue-rules.pdf intrigue-simplex.pdf intrigue-duplex.pdf
 	for d in rules cards; \
 	do \
 	  $(MAKE) --directory=$$d clean; \
