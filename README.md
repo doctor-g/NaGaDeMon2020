@@ -15,7 +15,10 @@ v0.1.2 2020-11-30
 
 ## Background
 
-This game was created as part of the 2020 
+[This blog post](http://paulgestwicki.blogspot.com/2020/12/intrigue-three-player-print-and-play.html) describes
+the design and production process for the game.
+
+_Intrigue_ was created as part of the 2020 
 [National Game Design Month](https://nagademon.org)
 
 ## Build Instructions
